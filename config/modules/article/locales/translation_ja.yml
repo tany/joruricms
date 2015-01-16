@@ -1,0 +1,105 @@
+ja: 
+  activerecord: 
+    attributes: 
+      article/unit: 
+        web_state: "状態"
+        sort_no: "並び順"
+        name: "組織ID"
+        title: "組織名"
+        email: "メールアドレス"
+        tel: "電話番号"
+        outline_uri: "業務概要URL"
+      
+      article/category: 
+        state: "状態"
+        sort_no: "並び順"
+        name: "分野ID"
+        title: "分野名"
+      
+      article/attribute: 
+        state: "状態"
+        sort_no: "並び順"
+        name: "属性ID"
+        title: "属性名"
+      
+      article/area: 
+        state: "状態"
+        sort_no: "並び順"
+        name: "地域ID"
+        title: "地域名"
+        zip_code: "郵便番号"
+        address: "住所"
+        tel: "電話番号"
+        site_uri: "公式サイトURL"
+      
+      article/doc: 
+        state: "状態"
+        agent_state: "表示端末"
+        published: "公開"
+        closed: "非公開"
+        publish_date: "公開日"
+        close_date: "非公開日"
+        event_date: "イベント開始日"
+        event_close_date: "イベント終了日"
+        sns_link_state: "SNS連携リンク"
+        name: "記事URL番号"
+        title: "タイトル"
+        head: "ヘッダー"
+        body: "内容"
+        mobile_title: "携帯タイトル"
+        mobile_body: "携帯本文"
+        attribute_id: "属性"
+        recent_state: "新着記事表示"
+        list_state: "記事一覧表示"
+        in_inquiry_group_id: "連絡先（課）"
+        in_inquiry_charge: "連絡先（室・担当）"
+        in_inquiry_tel: "連絡先（電話番号）"
+        in_inquiry_fax: "連絡先（ファクシミリ）"
+        in_inquiry_email: "連絡先（メールアドレス）"
+      
+      article/doc_rel_doc: 
+        created_at: "作成日時"
+        updated_at: "更新日時"
+        sort_no: "並び順"
+      
+      ## content
+      article/content/doc:
+        unit_uri: "組織URL"
+        category_uri: "分野URL"
+        attribute_uri: "属性URL"
+        area_uri: "地域URL"
+        tag_uri: "タグ検索URL"
+      
+      ## node
+      article/node/doc:
+        show_concept_id: "詳細画面コンセプト"
+        show_layout_id: "詳細画面レイアウト"
+      article/node/recent_doc:
+        list_type: "表示形式"
+      article/node/event_doc:
+        list_type: "表示形式"
+      article/node/unit:
+        list_type: "新着表示形式"
+        list_count: "新着表示件数"
+      article/node/category:
+        list_type: "新着表示形式"
+        list_count: "新着表示件数"
+      article/node/attribute:
+        list_type: "新着表示形式"
+        list_count: "新着表示件数"
+      article/node/area:
+        list_type: "新着表示形式"
+        list_count: "新着表示件数"
+      
+      ## piece
+      article/piece/recent_doc:
+        list_count: "表示件数"
+        more_label: "一覧リンク文字"
+      article/piece/recent_tab:
+        name: "タブID"
+        title: "タブ名"
+        more: "一覧リンク"
+        condition: "結合条件"
+        sort_no: "並び順"
+        list_count: "表示件数"
+        more_label: "一覧リンク文字"

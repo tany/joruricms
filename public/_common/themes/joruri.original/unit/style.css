@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import "../base/init.css";
+@import "../base/style.css";
+@import "../piece/style.css";
+
+/* =========================================================
+   category
+========================================================= */
+
+/* shinchaku-ichiran
+----------------------------------------------- */
+.contentArticleUnit .latest h2 {
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  background:#0952EB;
+  background: -moz-linear-gradient(top, #0952EB, #001C66);
+  background: -webkit-gradient(linear, center top, center bottom, from(#0952EB), to(#001C66));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0952EB', endColorstr='#001C69');
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 120%;
+}
+.contentArticleUnit ul {
+  padding: 0 5px 25px 0;
+}
+.contentArticleUnit li {
+  padding: 0 0 5px 10px;
+  background-image: url(./images/ic-list-shinchaku.gif);
+  background-repeat: no-repeat;
+  background-position: left 5px;
+}
+.contentArticleUnit h3 {
+  margin-bottom: 10px;
+  padding: 5px 5px 4px 15px;
+  background-color: #e3f0fa;
+  color: #333333;
+  font-weight: bold;
+  font-size: 120%;
+}
+.more {
+  padding: 0 5px 10px 0;
+  text-align: right;
+}
+
+/* Soshiki Ichiran
+----------------------------------------------- */
+#unitNavi {
+  margin: 0 0 20px;
+}
+#unitNavi .pieceBody {
+  padding: 10px 0 0;
+}
+#unitNavi .list {
+  text-align: left;
+}
+#unitNavi .list a {
+  padding: 0 0 0 7px;
+  background-image: url(./images/ic-list.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#unitNavi .pdfList {
+  text-align: right;
+}
+.contentArticleUnit table {
+  width: 100%;
+}
+.contentArticleUnit .pageTop {
+  margin:5px 0 30px;
+  text-align: right;
+}
+.contentArticleUnit .pageTop a {
+  padding: 0 0 0 15px;
+  background-image: url(./images/ic-top.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+table.department {
+  background-color: #232f92;
+  color: #ffffff;
+}
+table.department a {
+  margin: 0 10px 0 0;
+  padding: 0 0 0 7px;
+  background-image: url(./images/ic-link.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #ffffff;
+}
+table.department a:visited,
+table.department a:hover {
+  color: #ffffff;
+}
+table.unit a {
+  margin: 0 10px 0 0;
+  padding: 0 0 0 7px;
+  background-image: url(./images/ic-list.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+table.unit tr.cycle {
+  background-color: #e3f0fa;
+}
+.contentArticleUnit .department td,
+.contentArticleUnit .unit td {
+  padding: 5px 7px;
+}
+.contentArticleUnit td.outline,
+.contentArticleUnit td.page,
+.contentArticleUnit td.tel {
+  width: 15%;
+}
+.contentArticleUnit td.name {
+  width: 25%;
+}
+/* Soshiki Ichiran date
+----------------------------------------------- */
+.contentArticleUnit dl:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+* html .contentArticleUnit dl {
+  height: 1%;
+}
+.contentArticleUnit dl {
+  clear: both;
+  display: block;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.contentArticleUnit dl.cycle {
+  background: #eee;
+}
+.contentArticleUnit dl.department {
+  border: 1px solid #ccc;
+  background: #E3F0FA;
+}
+.contentArticleUnit dt {
+  float: left;
+  padding: 5px 10px;
+}
+.contentArticleUnit dd {
+  float: left;
+  padding: 5px 10px;
+}
+.contentArticleUnit dl {
+  display: block;
+  width: 100%;
+}
+.contentArticleUnit dt.name {
+  width: 15%;
+}
+.contentArticleUnit dd {
+  margin: 0;
+}
+.contentArticleUnit dd.outline {
+  display: table;
+  width: 30%;
+}
+.contentArticleUnit dd.page {
+  width: 15%;
+}
+.contentArticleUnit dd.email {
+  width: 25%;
+}
+.contentArticleUnit dd.tel {
+  width: 15%;
+}
