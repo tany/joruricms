@@ -20,7 +20,7 @@ module Cms::Model::Base::Page::TalkTask
     if !published? && task.published_at && ::Storage.exists?(mp3)
       return pub if task.published_at > Cms::KanaDictionary.dic_mtime
     end
-    
+
     task.unid         = pub.unid
     task.dependent    = pub.dependent
     task.path         = pub.path

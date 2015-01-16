@@ -725,6 +725,17 @@ h1 {
   background-repeat: no-repeat;
   background-position: left 7px;
 }
+#docTab .content dt {
+  clear: both;
+  float: left;
+  padding: 0 5px 10px 10px;
+  width: 125px;
+}
+#docTab .content dd {
+  display: block;
+  overflow: hidden;
+  padding: 0 10px 10px;
+}
 
 /* links
 ------------------------------------- */

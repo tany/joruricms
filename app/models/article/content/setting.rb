@@ -10,7 +10,7 @@ class Article::Content::Setting < Cms::ContentSetting
   set_config :inquiry_default_state, :name => "連絡先/表示初期値",
     :options => [['表示','visible'],['非表示','hidden']]
   set_config :inquiry_email_display, :name => "連絡先/メールアドレス表示",
-    :options => [["表示","visible"],["非表示","hidden"]]
+    :options => [["表示（必須）","visible"],["表示（任意）","visible_opt"],["非表示","hidden"]]
   set_config :recognition_type, :name => "承認/承認フロー",
     :options => [['管理者承認が必要','with_admin']]
   set_config :recognizers_include_admin, :name => "承認/他所属の管理者を表示",

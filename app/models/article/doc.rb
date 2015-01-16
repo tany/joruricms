@@ -34,6 +34,8 @@ class Article::Doc < ActiveRecord::Base
   attr_accessor :concept_id, :layout_id
   attr_accessor :link_checker
   
+  before_validation :set_inquiry_email_presence
+
   validates_presence_of :title
   validates_uniqueness_of :name, :scope => :content_id,
     :if => %Q(!replace_page?)
@@ -517,6 +519,14 @@ class Article::Doc < ActiveRecord::Base
   def inquiry_email_setting
     v = content.setting_value(:inquiry_email_display)
     v.blank? ? super : v
+  end
+
+  def set_inquiry_email_presence
+    self.unset_inquiry_email_presence if self.unset_inquiry_email_presence?
+  end
+
+  def unset_inquiry_email_presence?
+    inquiry_email_setting != 'visible' ? true : false
   end
   
   # group chenge

@@ -313,6 +313,7 @@ module Sys::Model::Base::File
   
   def mobile_image(mobile, params = {})
     return nil unless mobile
+    return nil if mobile.smart_phone?
     return nil if image_is != 1
     return nil if image_width <= 300 && image_height <= 400
     
