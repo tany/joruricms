@@ -19,7 +19,7 @@ var docTabs<%= Page.current_piece.id %> = new ArticleDocTabs('<%= Page.current_p
     <% if @list_type == 'published_at' %>
     <dl class="<%=h tab[:name] %>" <%== 'style="display: none;"' unless tab[:current] %>>
       <% tab[:docs].each do |doc| %>
-      <dt><%= doc.published_at.strftime('%Y年%-m月%-d日') if doc.published_at %></dt><dd><%= link_to h(doc.title), doc.public_uri %><%= doc.unit_title %></dd><% end %>
+      <dt><%= doc.published_at.strftime('%Y年%-m月%-d日') if doc.published_at %></dt><dd><%= link_to h(doc.title), doc.public_uri %><% if doc.new_mark %><span class="new">New</span><% end %><%= doc.unit_title %></dd><% end %>
     </dl><% else %>
     <ul class="<%= tab[:name] %>" <%== 'style="display: none;"' unless tab[:current] %>>
       <% tab[:docs].each do |doc| %>

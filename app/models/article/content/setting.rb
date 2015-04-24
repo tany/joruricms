@@ -24,6 +24,8 @@ class Article::Content::Setting < Cms::ContentSetting
   set_config :attachment_thumbnail_size, :name => "添付ファイル/サムネイルサイズ",
     :comment => "（例　<tt>120x90</tt> ）",
     :style   => 'width: 100px;'
+  set_config :new_term, :name => "新着マーク表示期間",
+    :comment => "時間（1日=24時間）、0:非表示"
   
   validate :validate_value
   
@@ -31,6 +33,10 @@ class Article::Content::Setting < Cms::ContentSetting
     case name
     when 'default_map_position'
       if !value.blank? && value !~ /^[0-9\.]+ *, *[0-9\.]+$/
+        errors.add :value, :invalid
+      end
+    when 'new_term'
+      if !value.blank? && value !~ /^([1-9]\d*|0)(\.\d+)?$/
         errors.add :value, :invalid
       end
     end

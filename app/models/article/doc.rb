@@ -319,6 +319,15 @@ class Article::Doc < ActiveRecord::Base
     self.agent_state = nil if agent_state == ''
     return true
   end
+
+  def new_mark
+    term = content.setting_value(:new_term).to_f * 60
+    return false if term <= 0
+
+    published_at = term.minutes.since self.published_at
+    return ( published_at.to_i >= Time.now.to_i )
+  end
+
   
   def check_digit
     return true if name.to_s != ''

@@ -1,4 +1,4 @@
-## Joruri CMS 2.1.1 インストールマニュアル                  2014.2.9
+## Joruri CMS 2.2.0 インストールマニュアル                  2015.4.24
 
 **********************************************************************
  1 想定環境
@@ -48,7 +48,7 @@ rootユーザに変更します。
 必要なパッケージをダウンロードします。
 
   # cd /usr/local/src/
-  # wget http://joruri.org/download/joruri-2.1.1.tar.gz \
+  # wget http://joruri.org/download/joruri-2.2.0.tar.gz \
       http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz \
       http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz \
       http://sourceforge.net/projects/sox/files/sox/14.4.1/sox-14.4.1.tar.gz \
@@ -68,7 +68,7 @@ Joruriユーザを作成します。
 Joruriソースコードを設置します。
 
   # mkdir /var/share
-  # tar xvzf joruri-2.1.1.tar.gz -C /var/share && cd /var/share/joruri
+  # tar xvzf joruri-2.2.0.tar.gz -C /var/share && cd /var/share/joruri
   # cp config/original/* config/
   # cp -r public/_common/themes/joruri.original public/_common/themes/joruri
   # chown -R joruri:joruri ./
